@@ -70,10 +70,10 @@ jobs:
           labels: |
             automated-pr
 
-      # # Sleep for some seconds to ensure the successes of the next 2 steps
-      # - name: Sleep for 1-5 seconds
-      #   run: |
-      #     sleep $(( $RANDOM % 5 + 1 ))
+       # Sleep for some seconds to ensure the successes of the next 2 steps
+       - name: Sleep for 1-5 seconds
+         run: |
+           sleep $(( $RANDOM % 5 + 1 ))
 
       # - name: Enable Pull Request Automerge
       #   if: steps.cpr.outputs.pull-request-operation == 'created'
